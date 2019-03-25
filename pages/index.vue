@@ -4,7 +4,6 @@
       <logo />
       <h1 class="title">
         copy-mt
-        1
       </h1>
       <h2 class="subtitle">
         nuxt, vue, koa2, vuex, element-ui
