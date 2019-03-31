@@ -13,7 +13,7 @@
       </div>
       <div class="login-register">
         <a href="###" class="login">立即登录</a>
-        <a href="###" class="register">注册</a>
+        <a href="/register" class="register">注册</a>
       </div>
     </div>
     <div class="nav">
@@ -190,151 +190,151 @@
 </script>
 
 <style scoped lang="less">
-    .Login-register {
-      margin: 0 auto;
-      height: 40px;
-      width: 1190px;
+  .Login-register {
+    margin: 0 auto;
+    height: 40px;
+    max-width: 1190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a:hover {
+      color: #31bbac;
+    }
+    .position {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      a:hover {
-        color: #31bbac;
+      .city {
+        margin-right: 4px;
       }
-      .position {
-        display: flex;
-        .city {
-          margin-right: 4px;
-        }
-        .change-city {
-          background: #F4F4F4;
-          border: 1px solid #E5E5E5;
-          color: #666;
-          border-radius: 2px;
-          margin: 0 4px;
-          padding: 0 2px;
-          &:hover {
-            color: #31bbac;
-          }
-        }
-        .city-position {
-          margin-right: 26px;
-
-        }
-        .login-register {
-          .login {
-            color: #31bbac;
-            margin-right: 9px;
-          }
+      .change-city {
+        background: #F4F4F4;
+        border: 1px solid #E5E5E5;
+        color: #666;
+        border-radius: 2px;
+        margin: 0 4px;
+        padding: 0 2px;
+        &:hover {
+          color: #31bbac;
         }
       }
-      .nav {
-        .bar {
-          display: flex;
-          > li {
-            padding: 12px 14px;
-            position: relative;
-            box-sizing: border-box;
-            a {
-              display: inline-block;
-              height: 100%;
-            }
-            &.in-select {
-              &:hover {
-                background: #fff;
-                box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
-                & > ul {
-                  display: block;
-                }
-                .net-bar {
-                  display: block;
-                  border: 1px solid #fff;
-                }
-              }
-              > ul {
-                display: none;
-                position: absolute;
-                background: #fff;
-                text-align: center;
-                z-index: 1000;
-                border-top: 0;
-                top: 40px;
-                padding: 12px 0;
-                box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
-                li {
-                  padding-top: 12px;
-                  &:nth-of-type(1) {
-                    padding-top: 0;
-                  }
-                }
-              }
-              .net-bar {
-                display: none;
-                background: #fff;
-                position: absolute;
-                z-index: 1000;
-                right: 0;
-                top: 40px;
-                width: 1200px;
-                box-sizing: border-box;
-                border-top-left-radius: 4px;
-                padding: 30px 36px 36px 47px;
-                border: 1px solid #E5E5E5;
-                box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
-                .select {
-                  display: flex;
-                  font-size: 12px;
-                  text-align: center;
-                  dt {
-                    font-size:14px;
-                    width: 100%;
-                    margin-bottom: 36px;
-                    color: #31bbac;
-                  }
-                  dd {
-                    color: #999999;
-                  }
-                  .travel {
-                    width: 253px;
-                    dd {
-                      float: left;
-                      margin: 7px 12px 0 0;
-                      width: 70px;
-                    }
-                  }
-                  .food {
-                    width: 193px;
-                    dd {
-                      margin: 7px 8px 0;
-                      float: left;
-                      width: 80px;
-                    }
-                  }
-                  .movie {
-                    width: 162px;
-                    dd {
-                      margin-top: 7px;
-                      float: left;
-                      width: 100%;
-                    }
-                  }
-                  .phone {
-                    flex: 1;
-                  }
-                }
-              }
-              .select-my-mt {
-                width: 100%;
-                left: 0;
-              }
-              .select-business-center {
-                width: 140%;
-                right: 0;
+      .city-position {
+        margin-right: 26px;
 
-              }
-            }
-          }
-
+      }
+      .login-register {
+        .login {
+          color: #31bbac;
+          margin-right: 9px;
         }
       }
     }
+    .nav {
+      .bar {
+        display: flex;
+        > li {
+          padding: 12px 14px;
+          position: relative;
+          box-sizing: border-box;
+          a {
+            display: inline-block;
+            height: 100%;
+          }
+          &.in-select {
+            &:hover {
+              background: #fff;
+              box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
+              & > ul {
+                display: block;
+              }
+              .net-bar {
+                display: block;
+                border: 1px solid #fff;
+              }
+            }
+            > ul {
+              display: none;
+              position: absolute;
+              background: #fff;
+              text-align: center;
+              z-index: 1000;
+              border-top: 0;
+              top: 40px;
+              padding: 12px 0;
+              box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
+              li {
+                padding-top: 12px;
+                &:nth-of-type(1) {
+                  padding-top: 0;
+                }
+              }
+            }
+            .net-bar {
+              display: none;
+              background: #fff;
+              position: absolute;
+              z-index: 1000;
+              right: 0;
+              top: 40px;
+              width: 1200px;
+              box-sizing: border-box;
+              border-top-left-radius: 4px;
+              padding: 30px 36px 36px 47px;
+              border: 1px solid #E5E5E5;
+              box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
+              .select {
+                display: flex;
+                font-size: 12px;
+                text-align: center;
+                dt {
+                  font-size: 14px;
+                  width: 100%;
+                  margin-bottom: 36px;
+                  color: #31bbac;
+                }
+                dd {
+                  color: #999999;
+                }
+                .travel {
+                  width: 253px;
+                  dd {
+                    float: left;
+                    margin: 7px 12px 0 0;
+                    width: 70px;
+                  }
+                }
+                .food {
+                  width: 193px;
+                  dd {
+                    margin: 7px 8px 0;
+                    float: left;
+                    width: 80px;
+                  }
+                }
+                .movie {
+                  width: 162px;
+                  dd {
+                    margin-top: 7px;
+                    float: left;
+                    width: 100%;
+                  }
+                }
+                .phone {
+                  flex: 1;
+                }
+              }
+            }
+            .select-my-mt {
+              width: 100%;
+              left: 0;
+            }
+            .select-business-center {
+              width: 140%;
+              right: 0;
+
+            }
+          }
+        }
+
+      }
+    }
+  }
 </style>
